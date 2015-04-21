@@ -14,6 +14,10 @@ def main(global_config, **settings):
                     context='aci_test:resources.Root',
                     renderer='aci_test:templates/mytemplate.pt')
     config.add_static_view('static', 'aci_test:static')
+
+    config.add_route("login", '/')
+
+
     # MongoDB
     def add_mongo_db(event):
         settings = event.request.registry.settings
