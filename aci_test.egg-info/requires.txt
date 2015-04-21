@@ -1,0 +1,3 @@
+requires
+pyramid
+pyramid_chameleon
