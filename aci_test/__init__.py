@@ -11,7 +11,7 @@ def main(global_config, **settings):
     config = Configurator(settings=settings, root_factory=Root)
     config.include('pyramid_chameleon')
     config.include('pyramid_mako')
-    config.add_renderer(".html", "pyramid.mako_templating.renderer_factory")
+    # config.add_renderer(".html", "pyramid.mako_templating.renderer_factory")
     config.add_view('aci_test.views.my_view',
                     context='aci_test:resources.Root',
                     renderer='aci_test:templates/mytemplate.pt')
