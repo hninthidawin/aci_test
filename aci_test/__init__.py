@@ -15,7 +15,8 @@ def main(global_config, **settings):
                     renderer='aci_test:templates/mytemplate.pt')
     config.add_static_view('static', 'aci_test:static')
 
-    config.add_route("login", '/')
+    config.add_route("home", '/')
+    config.add_route("angular_login", '/login')
 
 
     # MongoDB
